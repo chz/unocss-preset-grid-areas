@@ -1,0 +1,42 @@
+{
+  "name": "unocss-preset-grid-areas",
+  "description": "Grid Areas Preset for UnoCSS",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": "https://github.com/chz/unocss-preset-grid-areas.git",
+  "homepage": "https://github.com/chz/unocss-preset-grid-areas",
+  "bugs": {
+    "url": "https://github.com/chz/unocss-preset-grid-areas/issues"
+  },
+  "author": "StatuAgency",
+  "license": "MIT",
+  "keywords": [
+    "unocss",
+    "grid",
+    "grid-areas",
+    "multiple area",
+    "column",
+    "tailwind",
+    "tailwind grid areas unocss"
+  ],
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "unocss": "^0.55.2",
+    "vite": "^4.4.2",
+    "vite-plugin-dts": "^3.4.0"
+  },
+  "peerDependencies": {
+    "unocss": "^0.55.2"
+  }
+}
