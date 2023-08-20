@@ -1,9 +1,15 @@
 import type { Preset } from "unocss"
 
 export interface GridOptions {
-  gridTemplateAreas: Object
-  gridTemplateColumns: Object
-  gridTemplateRows: Object
+  gridTemplateAreas: {
+    [key: string]: string[];
+  };
+  gridTemplateColumns: {
+    [key: string]: string;
+  };
+  gridTemplateRows: {
+    [key: string]: string;
+  };
 }
 
 export function presetGridAreas(options: GridOptions): Preset {
