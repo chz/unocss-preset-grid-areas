@@ -1,7 +1,7 @@
 {
   "name": "unocss-preset-grid-areas",
   "description": "Grid Areas Preset for UnoCSS",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "src/index.ts",
   "type": "module",
   "types": "./dist/index.d.ts",
