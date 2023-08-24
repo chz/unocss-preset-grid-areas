@@ -4,12 +4,6 @@ export interface GridOptions {
   gridTemplateAreas: {
     [key: string]: string[];
   };
-  gridTemplateColumns: {
-    [key: string]: string;
-  };
-  gridTemplateRows: {
-    [key: string]: string;
-  };
 }
 
 export function presetGridAreas(options: GridOptions): Preset {
@@ -36,8 +30,6 @@ export function presetGridAreas(options: GridOptions): Preset {
       [/^col-start-(.+)$/, ([_, name]) => ({ 'grid-column-start': `${name}-start` })],
       [/^col-end-(.+)$/, ([_, name]) => ({ 'grid-column-end': `${name}-end` })],
       [/^grid-areas-(.*)$/, ([_, name]) => ({ 'grid-template-areas': gridTemplateAreas(name) })],
-      [/^grid-rows-(.*)$/, ([_, name]) => ({ 'grid-template-rows': options?.gridTemplateRows?.[name] || '' })],
-      [/^grid-cols-(.*)$/, ([_, name]) => ({ 'grid-template-columns': options?.gridTemplateColumns?.[name] || '' })],
     ],
   }
 }

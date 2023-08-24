@@ -41,9 +41,8 @@ exports[`grid-areas > utilities 1`] = `
 .col-end-footer{grid-column-end:footer-end;}
 .col-end-header{grid-column-end:header-end;}
 .col-end-main{grid-column-end:main-end;}
+.col-end-nav{grid-column-end:nav-end;}
 .grid-areas-layout{grid-template-areas:\\"header header header\\"
 \\"nav    main   main\\"
-\\"nav    footer footer\\";}
-.grid-rows-layout{grid-template-rows:6rem 3rem 1fr auto;}
-.grid-cols-layout{grid-template-columns:24rem 1fr 2rem;}"
+\\"nav    footer footer\\";}"
 `;
