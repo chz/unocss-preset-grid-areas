@@ -44,12 +44,6 @@ export default defineConfig({
           'nav    footer footer',
         ],
       },
-      gridTemplateColumns: {
-        'layout': '24rem 1fr 2rem',
-      },
-      gridTemplateRows: {
-        'layout': '6rem 3rem 1fr auto',
-      },
     })
   ]
 })
@@ -83,7 +77,7 @@ row-end-nav
 ```
 
 ```html
-<body class="grid grid-areas-layout grid-cols-layout grid-rows-layout h-full">
+<body class="grid grid-areas-layout grid-cols-[24rem_1fr_2rem] grid-rows-[6rem_3rem_1fr_auto] h-full">
   <header class="grid-in-header"></header>
   <nav class="grid-in-nav"></nav>
   <main class="grid-in-main"></main>
@@ -115,12 +109,6 @@ row-end-nav
 export interface GridOptions {
     gridTemplateAreas: {
         [key: string]: string[];
-    };
-    gridTemplateColumns: {
-        [key: string]: string;
-    };
-    gridTemplateRows: {
-        [key: string]: string;
     };
 }
 ```

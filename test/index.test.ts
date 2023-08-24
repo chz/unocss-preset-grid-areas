@@ -16,12 +16,6 @@ describe('grid-areas', () => {
             'nav    footer footer',
           ],
         },
-        gridTemplateColumns: {
-          'layout': '24rem 1fr 2rem',
-        },
-        gridTemplateRows: {
-          'layout': '6rem 3rem 1fr auto',
-        },
       }),
     ],
   })
@@ -38,8 +32,6 @@ describe('grid-areas', () => {
   it('utilities', async () => {
     const { css } = await generator.generate([
       'grid-areas-layout',
-      'grid-cols-layout',
-      'grid-rows-layout',
       'grid-in-footer',
       'grid-in-header',
       'grid-in-main',
