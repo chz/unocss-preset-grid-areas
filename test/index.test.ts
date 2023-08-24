@@ -51,7 +51,7 @@ describe('grid-areas', () => {
       'col-end-footer',
       'col-end-header',
       'col-end-main',
-      'col-start-nav',
+      'col-end-nav',
       'row-start-footer',
       'row-start-header',
       'row-start-main',
